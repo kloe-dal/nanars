@@ -23,5 +23,16 @@
       <p class="collabo" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus laboriosam impedit, pariatur nemo perspiciatis inventore aperiam, ex expedita hic recusandae illum quo a tempore minus dolorem, facilis dolore quae labore!</p>
      </article>
   </section>
+  {{> books}}
  </div>
 </body>
+
+<template name="books">
+  {{#each book}}
+    <div class="col-xs-4 col-xs-offset-1">
+      <h1>{{title}}</h1>
+      <img src="{{img}}">
+      <p>{{resume}}</p>
+    </div>
+  {{/each}}
+</template>
