@@ -11,3 +11,7 @@ $ git clone git@github.com:kloe-dal/nanars.git .
 $ mrt add less-bootstrap-3
 $ mrt add font-awesome-4-less
 ```
+Pour lire les emails, ouvrir la console dans google chrome :
+```
+> Emails.find().fetch()
+```
