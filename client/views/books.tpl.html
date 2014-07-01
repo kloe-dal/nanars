@@ -3,8 +3,19 @@
   {{#each book}}
     <section class="col-xs-4 col-xs-offset-1">
       <h2>{{title}}</h2>
-      <img src="{{img}}">
+      <a href="#" data-toggle="modal" data-target=".resume-box"><img src="{{img}}"></a>
       <p>{{resume}}</p>
-    </section>
+    </section>    
   {{/each}}
+
+
+</template>
+
+
+<template name="modal">
+  <div class="modal fade resume-box">
+    <div class="modal-content modal-dialog modal-sm">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum minus, fuga veritatis quidem quis. Neque, aliquid eum, minus cum pariatur maiores, voluptatem odit, eveniet impedit laudantium dolore magni facilis animi.
+    </div>
+  </div>
 </template>
